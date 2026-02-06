@@ -36,4 +36,30 @@
 
     #no {
       background: gray;
-      po
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>FARHEEN, will you be my Valentine? 💕</h1>
+
+    <button id="yes" onclick="goYes()">YES</button>
+    <button id="no" onmouseover="runAway()">NO</button>
+  </div>
+
+  <script>
+    function runAway() {
+      const no = document.getElementById("no");
+      no.style.left = Math.random() * (window.innerWidth - 100) + "px";
+      no.style.top = Math.random() * (window.innerHeight - 50) + "px";
+    }
+
+    function goYes() {
+      window.location.href = "yes.html";
+    }
+  </script>
+</body>
+</html>
+
